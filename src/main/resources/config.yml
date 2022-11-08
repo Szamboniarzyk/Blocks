@@ -1,0 +1,85 @@
+# #############################################
+#                                             #
+#  Boxpvp /blocks plugin By Szamboniarzyk     #
+#                                             #
+###############################################
+
+# Global settings
+# Global prefix for all messages
+prefix: '&9Blocks'
+
+# Messages config
+messages:
+  # Messages off full inventory
+  full-eq: '&cYour inventory is full!'
+  # Messages off no items
+  no-items: '&cYou dont have items!'
+  # Message of replaced items
+  replaced: '&aYou successfully replaced items!'
+
+# Gui config
+gui:
+  # Number of rows in gui
+  rows: 4
+  # Title of gui
+  title: '&9Blocks'
+  # Filler material
+  filler-material: BLUE_STAINED_GLASS_PANE
+  # Materials setting
+  materials:
+    # If you want to disable any material, just replace 'true' to 'false'
+    netherite: true
+    emerald: true
+    diamond: true
+    gold: true
+    iron: true
+    replace-all: true
+  # Materials in gui config
+  netherite:
+    slot: 10
+    material: NETHERITE_INGOT
+    title: '&5Netherite'
+    lore:
+      - ''
+      - '&7Replace netherite ingots to netherite blocks'
+      - ''
+  emerald:
+    slot: 12
+    material: EMERALD
+    title: '&2Emerald'
+    lore:
+      - ''
+      - '&7Replace emeralds to emerald blocks'
+      - ''
+  diamond:
+    slot: 14
+    material: DIAMOND
+    title: '&bDiamond'
+    lore:
+      - ''
+      - '&7Replace diamonds to diamond blocks'
+      - ''
+  gold:
+    slot: 16
+    material: GOLD_INGOT
+    title: '&6Gold'
+    lore:
+      - ''
+      - '&7Replace gold ingots to gold blocks'
+      - ''
+  iron:
+    slot: 20
+    material: IRON_INGOT
+    title: '&fIron'
+    lore:
+      - ''
+      - '&7Replace iron ingots to iron blocks'
+      - ''
+  replace-all:
+    slot: 24
+    material: CLOCK
+    title: '&cReplace all items to blocks'
+    lore:
+      - ''
+      - '&aReplace any ingots to blocks!'
+      - ''
