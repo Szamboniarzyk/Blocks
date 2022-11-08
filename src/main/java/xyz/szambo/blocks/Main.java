@@ -10,6 +10,7 @@ public final class Main extends JavaPlugin {
     public static Plugin instance;
     @Override
     public void onEnable() {
+
         System.out.println("Thanks for download the plugin ^^");
         instance = this;
         instance.saveDefaultConfig();

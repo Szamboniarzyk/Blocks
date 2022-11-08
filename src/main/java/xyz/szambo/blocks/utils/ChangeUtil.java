@@ -61,11 +61,11 @@ public class ChangeUtil {
 
 
     public static void ChangeAll(Player player) {
-        Change(player, Material.GOLD_INGOT, Material.GOLD_BLOCK);
-        Change(player, Material.DIAMOND, Material.DIAMOND_BLOCK);
-        Change(player, Material.EMERALD, Material.EMERALD_BLOCK);
-        Change(player, Material.IRON_INGOT, Material.IRON_BLOCK);
-        Change(player, Material.NETHERITE_INGOT, Material.NETHERITE_BLOCK);
+        ReplaceUtil.replacer(player, Material.NETHERITE_INGOT, Material.NETHERITE_BLOCK);
+        ReplaceUtil.replacer(player, Material.EMERALD, Material.EMERALD_BLOCK);
+        ReplaceUtil.replacer(player, Material.DIAMOND, Material.DIAMOND_BLOCK);
+        ReplaceUtil.replacer(player, Material.GOLD_INGOT, Material.GOLD_BLOCK);
+        ReplaceUtil.replacer(player, Material.IRON_INGOT, Material.IRON_BLOCK);
     }
 
 }

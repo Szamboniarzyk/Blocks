@@ -5,12 +5,17 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
+import org.bukkit.inventory.ItemStack;
 import xyz.szambo.blocks.ConfigManager.ConfigManager;
 import xyz.szambo.blocks.Main;
 import xyz.szambo.blocks.utils.ChangeUtil;
 import xyz.szambo.blocks.utils.ChatUtil;
+import xyz.szambo.blocks.utils.ReplaceUtil;
+
+import java.util.Map;
 
 public class OnClickListener implements Listener {
+
 
     @EventHandler
     public void onClick(InventoryClickEvent e) {
@@ -71,9 +76,31 @@ public class OnClickListener implements Listener {
                 }
             }
             if (e.getCurrentItem().getType().equals(Material.valueOf(Main.instance.getConfig().getString("gui.replace-all.material")))) {
-                    ChangeUtil.ChangeAll(p);
-                    p.closeInventory();
-                    p.sendTitle(ConfigManager.prefix, ChatUtil.fixColor(Main.instance.getConfig().getString("messages.replaced")));
+                ChangeUtil.ChangeAll(p);
+             //   if (p.getInventory().getType().equals(Material.NETHERITE_INGOT)) {
+             //       ChangeUtil.Change(p, Material.NETHERITE_INGOT, Material.NETHERITE_BLOCK);
+             //       p.closeInventory();
+            //        p.sendTitle(ConfigManager.prefix, ChatUtil.fixColor(Main.instance.getConfig().getString("messages.replaced")));
+             //   } else if (p.getInventory().getType().equals(Material.EMERALD)) {
+              //      ChangeUtil.Change(p, Material.EMERALD, Material.EMERALD_BLOCK);
+              //      p.closeInventory();
+              //      p.sendTitle(ConfigManager.prefix, ChatUtil.fixColor(Main.instance.getConfig().getString("messages.replaced")));
+              //  } else if (p.getInventory().getType().equals(Material.DIAMOND)) {
+             //       ChangeUtil.Change(p, Material.DIAMOND, Material.DIAMOND_BLOCK);
+             //       p.closeInventory();
+               //     p.sendTitle(ConfigManager.prefix, ChatUtil.fixColor(Main.instance.getConfig().getString("messages.replaced")));
+               // } else if ( p.getInventory().getType().equals(Material.GOLD_INGOT)) {
+              //      ChangeUtil.Change(p, Material.GOLD_INGOT, Material.GOLD_BLOCK);
+              //      p.closeInventory();
+              //      p.sendTitle(ConfigManager.prefix, ChatUtil.fixColor(Main.instance.getConfig().getString("messages.replaced")));
+              //  } else if (p.getInventory().getType().equals(Material.IRON_INGOT)) {
+              //      ChangeUtil.Change(p, Material.IRON_INGOT, Material.IRON_BLOCK);
+               //     p.closeInventory();
+               //     p.sendTitle(ConfigManager.prefix, ChatUtil.fixColor(Main.instance.getConfig().getString("messages.replaced")));
+             //   } else {
+            //        p.closeInventory();
+            //        p.sendTitle(ConfigManager.prefix, ChatUtil.fixColor(Main.instance.getConfig().getString("messages.no-items")));
+     //           }
             }
         }
     }
